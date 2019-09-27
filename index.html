@@ -1,9 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Pham Minh Toan site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>pmtoan - github.io</title>
+
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="assets/css/theme-styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/blocks.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/widgets.css">
+
+
+    <!--External fonts-->
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
+
 </head>
-<body>
-	<h5>Hello, I'm Toan!</h5>
+
+<body class="crumina-grid">
+
+
+<!-- Preloader -->
+
+<div id="hellopreloader" style="display: block; position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 100%;background: #66b5ff url(assets/svg/preload.svg) center center no-repeat;background-size: 41px;opacity: 1;"></div>
+
+<!-- ... end Preloader -->
+
+
+<!-- Header -->
+
+<header class="header header--small-lines" id="site-header">
+    <div class="header-lines-decoration">
+        <span class="bg-secondary-color"></span>
+        <span class="bg-blue"></span>
+        <span class="bg-blue-light"></span>
+        <span class="bg-orange-light"></span>
+        <span class="bg-red"></span>
+        <span class="bg-green"></span>
+        <span class="bg-secondary-color"></span>
+    </div>
+
+    <div class="container">
+
+        <a href="#" id="top-bar-js" class="top-bar-link"><svg class="utouch-icon utouch-icon-arrow-top"><use xlink:href="#utouch-icon-arrow-top"></use></svg></a>
+
+        <div class="header-content-wrapper">
+
+            <div class="site-logo">
+                <a href="/">
+                    <div class="logo-text">
+                        <div class="logo-title">Let's smile today</div>
+                    </div>
+                </a>
+            </div>
+
+            <nav id="primary-menu" class="primary-menu">
+
+                <!-- menu-icon-wrapper -->
+
+                <a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
+                    <span class="mob-menu--title">Menu</span>
+                    <span id="menu-icon-wrapper" class="menu-icon-wrapper">
+					<svg width="1000px" height="1000px">
+						<path id="pathD" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+						<path id="pathE" d="M 300 500 L 700 500"></path>
+						<path id="pathF" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+					</svg>
+				</span>
+                </a>
+
+                <ul class="primary-menu-menu">
+                    <li class="menu-item-has-children">
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="/develop.html">Develop</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="/linux.html">Linux</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="/blockchain.html">Blockchain</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>   <!-- ... End Header -->
+    
+<div class="header-spacer"></div>
+
+<!-- Linux system programming -->
+<div class="container">
+
+</div>
+<!-- End of Linux system administrator -->
+
+
+<!-- Used SVG-icons -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display: block; width: 1px; height: 1px; visibility: hidden; opacity: 0;">
+    <symbol id="utouch-icon-correct-symbol-1" viewBox="0 0 512 512">
+        <path d="m502 114l-45-45c-6-6-13-9-22-9-9 0-16 3-23 9l-216 217-97-98c-6-6-14-9-22-9-9 0-17 3-23 9l-45 45c-6 6-9 14-9 23 0 9 3 16 9 22l120 120 45 44c6 7 13 10 22 10 9 0 16-3 22-10l45-44 239-239c6-6 9-14 9-23 0-9-3-16-9-22z"/>
+    </symbol>
+</svg>
+<!-- ... end Used SVG-icons -->
+
+
+<!-- jQuery first, then Other JS. -->
+<script src="assets/js/jquery-3.2.0.min.js"></script>
+
+
+<!-- jQuery-scripts for Template -->
+<script src="assets/js/crum-mega-menu.js"></script>
+<script src="assets/js/swiper.jquery.min.js"></script>
+<script src="assets/js/jquery.typeahead.min.js"></script>
+<script src="assets/js/velocity.min.js"></script>
+<script src="assets/js/theme-plugins.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/form-actions.js"></script>
 </body>
 </html>

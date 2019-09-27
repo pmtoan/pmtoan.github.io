@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>pmtoan - github.io</title>
+
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/theme-styles.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/blocks.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/widgets.css">
+
+
+    <!--External fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
+
+</head>
+
+<body class="crumina-grid">
+
+
+<!-- Preloader -->
+
+<div id="hellopreloader" style="display: block; position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 100%;background: #66b5ff url(../../assets/svg/preload.svg) center center no-repeat;background-size: 41px;opacity: 1;"></div>
+
+<!-- ... end Preloader -->
+
+
+<!-- Header -->
+
+<header class="header header--small-lines" id="site-header">
+    <div class="header-lines-decoration">
+        <span class="bg-secondary-color"></span>
+        <span class="bg-blue"></span>
+        <span class="bg-blue-light"></span>
+        <span class="bg-orange-light"></span>
+        <span class="bg-red"></span>
+        <span class="bg-green"></span>
+        <span class="bg-secondary-color"></span>
+    </div>
+
+    <div class="container">
+
+        <a href="#" id="top-bar-js" class="top-bar-link"><svg class="utouch-icon utouch-icon-arrow-top"><use xlink:href="#utouch-icon-arrow-top"></use></svg></a>
+
+        <div class="header-content-wrapper">
+
+            <div class="site-logo">
+                <a href="/">
+                    <div class="logo-text">
+                        <div class="logo-title">Let's smile today</div>
+                    </div>
+                </a>
+            </div>
+
+            <nav id="primary-menu" class="primary-menu">
+
+                <!-- menu-icon-wrapper -->
+
+                <a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
+                    <span class="mob-menu--title">Menu</span>
+                    <span id="menu-icon-wrapper" class="menu-icon-wrapper">
+					<svg width="1000px" height="1000px">
+						<path id="pathD" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+						<path id="pathE" d="M 300 500 L 700 500"></path>
+						<path id="pathF" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+					</svg>
+				</span>
+                </a>
+
+                <ul class="primary-menu-menu">
+                    <li class="menu-item-has-children">
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="/develop.html">Develop</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="/linux.html">Linux</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="/blockchain.html">Blockchain</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>   <!-- ... End Header -->
+
+<div class="header-spacer"></div>
+
+<!-- Linux system programming -->
+<div class="container">
+    <section class="negative-margin-top80" style="margin-top: 50px;">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="course-details">
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="description">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <h5>Install and configure Redmine on Ubuntu 18.04</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <h6 style="margin-left: 20px;">1. Install Ruby</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <p class="bg-blue-lighteen cmd">
+                                        $ sudo apt-get install curl mysql-server libmysqlclient-dev git subversion imagemagick libmagickwand-dev libcurl4-openssl-dev<br>
+                                        $ sudo apt-get update<br>
+                                        $ command curl -sSL https://rvm.io/mpapis.asc | gpg --import -<br>
+                                        $ curl -L https://get.rvm.io | sudo bash -s stable<br>
+                                        $ sudo su<br>
+                                        # source /usr/local/rvm/scripts/rvm<br>
+                                        # echo '[[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"' >> ~/.bashrc<br>
+                                        # command curl -sSL https://rvm.io/mpapis.asc | gpg --import -<br>
+                                        # rvm get head<br>
+                                        # rvm install ruby-2.3<br>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <h6 style="margin-left: 20px;">2. Install Passenger and Nginx</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <p class="bg-blue-lighteen cmd">
+                                        $ sudo apt-get install -y dirmngr gnupg<br>
+                                        $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 561F9B9CAC40B2F7<br>
+                                        $ sudo apt-get install -y apt-transport-https ca-certificates<br>
+                                        $ sudo sh -c 'echo deb https://oss-binaries.phusionpassenger.com/apt/passenger bionic main > /etc/apt/sources.list.d/passenger.list'<br>
+                                        $ sudo apt-get update<br>
+                                        $ sudo apt-get install -y libnginx-mod-http-passenger nginx-extras<br>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <h6 style="margin-left: 20px;">3. Enable Passenger Nginx module</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <p class="bg-blue-lighteen cmd">
+                                        $ if [ ! -f /etc/nginx/modules-enabled/50-mod-http-passenger.conf ]; then sudo ln -s /usr/share/nginx/modules-available/mod-http-passenger.load /etc/nginx/modules-enabled/50-mod-http-passenger.conf; fi<br>
+                                        $ sudo ls /etc/nginx/conf.d/mod-http-passenger.conf<br>
+                                    </p>
+                                    <p>
+                                        If you don’t see a file at /etc/nginx/conf.d/mod-http-passenger.conf;
+                                        then you need to create it yourself and set the passenger_ruby and passenger_root config options.
+                                        For example:
+                                    </p>
+                                    <p class="bg-blue-lighteen cmd">
+                                        passenger_root /usr/lib/ruby/vendor_ruby/phusion_passenger/locations.ini;<br>
+                                        passenger_ruby /usr/bin/passenger_free_ruby;
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <h6 style="margin-left: 20px;">4. Install and configure MySQL</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <p class="bg-blue-lighteen cmd">
+                                        CREATE DATABASE redmine CHARACTER SET utf8mb4;<br>
+                                        GRANT ALL ON redmine.* TO 'redmine'@'localhost' IDENTIFIED BY 'change-with-strong-password';<br>
+                                        FLUSH PRIVILEGES;<br>
+                                        EXIT;<br>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <h6 style="margin-left: 20px;">5. Install Redmine</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <p class="bg-blue-lighteen cmd">
+                                        $ sudo apt install build-essential libmysqlclient-dev imagemagick libmagickwand-dev ruby2.5-dev<br>
+                                        $ cd /home/ubuntu<br>
+                                        $ wget https://www.redmine.org/releases/redmine-4.0.3.tar.gz<br>
+                                        $ tar -zxf redmine-4.0.3.tar.gz<br>
+                                        $ mv redmine-4.0.3 redmine<br>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <h6 style="margin-left: 20px;">6. Configure Redmine production database</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <p class="bg-blue-lighteen cmd">
+                                        $ cd /home/ubuntu/redmine<br>
+                                        $ cp config/database.yml.example config/database.yml<br>
+                                    </p>
+                                    <p>
+                                        Configure file /home/ubuntu/redmine/config/database.yml
+                                    </p>
+                                    <p class="bg-blue-lighteen cmd">
+                                        production:<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;adapter: mysql2<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;database: redmine<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;host: localhost<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;username: redmine<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;password: "change-with-strong-password"<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;encoding: utf8<br>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <h6 style="margin-left: 20px;">7. Install Ruby dependencies</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <p class="bg-blue-lighteen cmd">
+                                        $ cd /home/ubuntu/redmine<br>
+                                        $ sudo gem install bundler --no-rdoc --no-ri<br>
+                                        $ sudo bundle install --without development test postgresql sqlite<br>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <h6 style="margin-left: 20px;">8. Generate key and migrate database</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <p class="bg-blue-lighteen cmd">
+                                        $ cd /home/ubuntu<br>
+                                        $ sudo bundle exec rake generate_secret_token<br>
+                                        $ sudo RAILS_ENV=production bundle exec rake db:migrate<br>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <h6 style="margin-left: 20px;">9. Configure Nginx</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <p>
+                                        Edit file /etc/nginx/sites-available/default
+                                    </p>
+                                    <p class="bg-blue-lighteen cmd">
+                                        server {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;listen 80;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;server_name _;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;root /home/ubuntu/redmine/public;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;passenger_enabled on;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;passenger_min_instances 1;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;client_max_body_size 10m;<br>
+                                        }
+                                    </p>
+                                    <p class="bg-blue-lighteen cmd">
+                                        $ sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/<br>
+                                        $ sudo systemctl restart nginx<br>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <h6 style="margin-left: 20px;">10. Go to web interface</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <p>
+                                        Login into Redmine (http://localhost) with credentials: <b>admin/admin</b>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <h6 style="margin-left: 20px;">11. Install plugins</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <p>
+                                        Go to redmine root folder<br>
+                                        Extract plugin into <b>plugins</b> folder<br>
+                                    </p>
+                                    <p>
+                                        Install dependencies
+                                    </p>
+                                    <p class="bg-blue-lighteen cmd">
+                                        $ cd /home/ubuntu/redmine<br>
+                                        $ sudo bundle install --without development test --no-deployment<br>
+                                    </p>
+                                    <p>
+                                        Migrate database
+                                    </p>
+                                    <p class="bg-blue-lighteen cmd">
+                                        $ sudo bundle exec rake redmine:plugins NAME=redmine_contacts RAILS_ENV=production<br>
+                                    </p>
+                                    <p>
+                                        Restart redmine
+                                    </p>
+                                    <p class="bg-blue-lighteen cmd">
+                                        $ sudo touch tmp/restart.txt<br>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="post-details-shared">
+                                    <div class="widget w-follow">
+                                        <ul class="socials socials--round">
+                                            <li>Share:</li>
+                                            <li>
+                                                <a href="" class="social__item facebook">
+                                                    <svg class="utouch-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M15.117 0H.883C.395 0 0 .395 0 .883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883 0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.48-1.195 1.18v1.54h2.39l-.31 2.42h-2.08V16h4.077c.488 0 .883-.395.883-.883V.883C16 .395 15.605 0 15.117 0" fill-rule="nonzero"></path></svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="social__item twitter">
+                                                    <svg class="utouch-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.37-1.337.64-2.085.79-.598-.64-1.45-1.04-2.396-1.04-1.812 0-3.282 1.47-3.282 3.28 0 .26.03.51.085.75-2.728-.13-5.147-1.44-6.766-3.42C.83 2.58.67 3.14.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.41-.02-.61-.058.42 1.304 1.63 2.253 3.07 2.28-1.12.88-2.54 1.404-4.07 1.404-.26 0-.52-.015-.78-.045 1.46.93 3.18 1.474 5.04 1.474 6.04 0 9.34-5 9.34-9.33 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7z" fill-rule="nonzero"></path></svg>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="" class="social__item googlePlus">
+                                                    <svg class="utouch-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8.16 6.857V9.6h4.537c-.183 1.177-1.37 3.45-4.537 3.45-2.73 0-4.96-2.26-4.96-5.05s2.23-5.05 4.96-5.05c1.554 0 2.594.66 3.19 1.233l2.17-2.092C12.126.79 10.32 0 8.16 0c-4.423 0-8 3.577-8 8s3.577 8 8 8c4.617 0 7.68-3.246 7.68-7.817 0-.526-.057-.926-.126-1.326H8.16z"></path></svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+<!-- End of Linux system programming -->
+
+<!-- jQuery first, then Other JS. -->
+<script src="../../assets/js/jquery-3.2.0.min.js"></script>
+
+<!-- jQuery-scripts for Template -->
+<script src="../../assets/js/crum-mega-menu.js"></script>
+<script src="../../assets/js/swiper.jquery.min.js"></script>
+<script src="../../assets/js/jquery.typeahead.min.js"></script>
+<script src="../../assets/js/velocity.min.js"></script>
+<script src="../../assets/js/theme-plugins.js"></script>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/form-actions.js"></script>
+</body>
+</html>
